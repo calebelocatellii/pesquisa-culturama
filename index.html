@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pesquisa Culturama</title>
 </head>
 <body>
-    
+    <header>
+
+        <h1>Pesquisa Online</h1>
+    </header>
+    <section>
+
+        <!--Dados Pessoais-->
+
+        <form action="" method="get">
+
+            <fieldset>
+                <legend>Personal information </legend>
+               <!--Nome do usuario--> 
+            <label for="userName">Name</label>
+            <input type="text" name="userName" required>
+            <br>
+
+            <!--Idade do usuario-->
+
+            <label for="userAge">Age</label>
+            <input type="number" name="userAge" min="12" max="100" required>
+            <br>
+
+            <!--Nascimento do usuario-->
+
+            <label for="birthDate">date of birth</label>
+            <input type="date" name="birthDate">
+            <br>
+
+            <!--Email do usuario-->
+
+            <label for="userEmail">Email</label>
+            <input type="email" name="userEmail" required>
+            <br>
+
+            <!--Telefone do usuario-->
+
+            <label for="userPhoneNumber">phone</label>
+            <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
+            <br>
+
+            <!-- upload de foto selecionada pelo usuario-->
+
+            <label for="userImage">photo upload</label>
+            <input type="file" accept="image/*" name="userImage">
+            <br>
+ 
+            </fieldset>
+            
+
+            <!--do usuario-->
+             <button type="submit">send</button>
+        </form>
+    </section>
 </body>
 </html>
