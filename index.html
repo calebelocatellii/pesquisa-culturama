@@ -14,45 +14,34 @@
 
         <!--Dados Pessoais-->
 
-        <form action="" method="get">
+     <form action="" method="get">
 
             <fieldset>
                 <legend>Personal information </legend>
-               <!--Nome do usuario--> 
+                
             <label for="userName">Name</label>
             <input type="text" name="userName" required>
             <br>
-
-            <!--Idade do usuario-->
-
+           
             <label for="userAge">Age</label>
             <input type="number" name="userAge" min="12" max="100" required>
             <br>
-
-            <!--Nascimento do usuario-->
-
+          
             <label for="birthDate">date of birth</label>
             <input type="date" name="birthDate">
             <br>
-
-            <!--Email do usuario-->
-
+         
             <label for="userEmail">Email</label>
             <input type="email" name="userEmail" required>
             <br>
-
-            <!--Telefone do usuario-->
-
+           
             <label for="userPhoneNumber">phone</label>
             <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
             <br>
-
-            <!-- upload de foto selecionada pelo usuario-->
-
+            
             <label for="userImage">photo upload</label>
             <input type="file" accept="image/*" name="userImage">
             <br>
- 
             </fieldset>
 
             <fieldset>
@@ -78,69 +67,55 @@
 
                 <label for="userState">Estado:</label>
                 <select name="userState" required >
-                   <option value="alagoas">Alagoas</option>
-
+                    <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
-
                     <option value="amazonas">Amazonas</option>
-
                     <option value="bahia">Bahia</option>
-
                     <option value="ceara">Ceará</option>
-
                     <option value="distritoFederal">Distrito Federal</option>
-
                     <option value="espiritoSanto">Espírito Santo</option>
-
                     <option value="goias">Goiás</option>
-
                     <option value="maranhao">Maranhão</option>
-
                     <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
-
                     <option value="matoGrosso">Mato Grosso</option>
-
                     <option value="minasGerais">Minas Gerais</option>
-
                     <option value="para">Pará</option>
-
                     <option value="paraiba">Paraíba</option>
-
                     <option value="parana">Paraná</option>
-                    
                     <option value="pernambuco">Pernambuco</option>
-
                     <option value="piaui">Piauí</option>
-
                     <option value="rioDeJaneiro">Rio de Janeiro</option>
-
                     <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
-
                     <option value="rioGrandeDoSul">Rio Grande do Sul</option>
-
                     <option value="rondonia">Rondônia</option>
-
                     <option value="roraima">Roraima</option>
-
                     <option value="santaCatarina">Santa Catarina</option>
-
                     <option value="saoPaulo">São Paulo</option>
-
                     <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>                                   
+            </select>  
 
-                    <option value="tocantins">Tocantins</option>
-                                    
-              
-            </select>   
             <label for="userCity">Cidade:</label>
                <input type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Ex: Fortaleza" />
             </fieldset>
-
-            
-                
-        
-             <button type="submit">send</button>
+        <fieldset>
+            <legend>Hábitos</legend>
+            <p>Redes Socias:</p>
+            <input type="checkbox" name="social" value="instagram">
+            <label for="socil">Instagram</label>
+        <br>
+            <input type="checkbox" name="social" value="facebook">
+            <label for="socil">Facebook</label>
+        <br>
+            <input type="checkbox" name="social" value="linkedin">
+            <label for="socil">linkedin</label>
+        <br>
+            <input type="checkbox" name="social" value="X">
+            <label for="socil">X</label>
+        </fieldset>
+<button type="submit">send</button>
         </form>
-    </section>
+
+   
 </body>
 </html>
