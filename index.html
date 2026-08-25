@@ -10,7 +10,7 @@
 
         <h1>Pesquisa Online</h1>
     </header>
-    <section>
+<section>
 
         <!--Dados Pessoais-->
 
@@ -130,9 +130,27 @@
             <label for="favoriteColor">Cor favorita</label>
             <input type="color" name="userFavoriteColor" id="favoriteColor">
         </fieldset>
-<button type="submit">send</button>
-        </form>
+        <fieldset>
+            <legend>Opinião</legend>
+            <label for="great">Ótima</label>
+            <input type="radio" name="userSatisfaction" id="great">
+            <br>
+              <label for="good">Boa</label>
+            <input type="radio" name="userSatisfaction" id="good">
+            <br>
+              <label for="regular">Regular</label>
+            <input type="radio" name="userSatisfaction" id="regular">
+            <br>
+              <label for="bad">Bad</label>
+            <input type="radio" name="userSatisfaction" id="bad">
+            <br>
+            <label for="comment">Escreva sua opinião:</label>
+            <br>
+            <textarea id="comment" name="userComent" placeholder="Digite aqui!"></textarea>
+        </fieldset>
+        <button type="submit">send</button>
+    </form>
 
-   
+</section>
 </body>
 </html>
