@@ -86,7 +86,8 @@ label {
 input[type="tel"]{
     margin-bottom: 0;
 }
-input[type="tel"]{
+input[type="tel"],
+input[type="file"]{
     margin-bottom: 0;
 }
 
