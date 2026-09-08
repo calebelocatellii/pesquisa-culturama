@@ -45,10 +45,7 @@ fieldset {
     margin-bottom: 8px;
 }
 
-label {
-    display: inline-block;
-    margin-bottom: 5px;
-}
+
 
 p {
     margin-bottom: 15px;
@@ -72,6 +69,7 @@ textarea {
     min-height: 100px;
 }
 
+
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
@@ -81,12 +79,31 @@ input[type="color"]{
     width: 35px;
     padding: 0 5px;
 }
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+input[type="tel"]{
+    margin-bottom: 0;
+}
+input[type="tel"]{
+    margin-bottom: 0;
+}
 
-input :invalid,textarea:invalid,select:invalid{
+small{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+input:focus{
+    border-color: cornflowerblue;
+    display: inline-block;
+}
+
+input :invalid{
     border-color: red;
 }
 
-input:valid, select:valid,textarea:valid{
+input:valid{
     border-color: green;
 }
 
